@@ -49,9 +49,6 @@ namespace SpawnItemPlugin.Plugin
                             Log.Info("Player " + player.Nickname + " has randomly spawned with " + configuration.item.ToString());
                         }));
                     }
-                } else
-                {
-                    Log.Info("Player didnt spawn with a keycard");
                 }
             }
         }
