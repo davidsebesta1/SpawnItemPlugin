@@ -12,7 +12,6 @@ namespace SpawnItemPlugin.Plugin
     internal class Plugin
     {
         //Variables
-
         private Random random = new Random();
 
         //Configuration variable

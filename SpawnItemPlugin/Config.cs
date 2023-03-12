@@ -23,6 +23,6 @@ namespace SpawnItemPlugin.Plugin
         public readonly int randomNumberTop = 5; // number to generate in random generator, 5 by default
 
         [Description("Random number requirement")]
-        public readonly int randomNumberRequirement = 10; // number (!lower than generateNumberTop!) required to give the player starting item
+        public readonly int randomNumberRequirement = 3; // number (!lower than generateNumberTop!) required to give the player starting item
     }
 }
