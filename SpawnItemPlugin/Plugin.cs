@@ -1,4 +1,5 @@
-﻿using PlayerRoles;
+﻿using InventorySystem;
+using PlayerRoles;
 using PluginAPI.Core;
 using PluginAPI.Core.Attributes;
 using PluginAPI.Enums;
@@ -33,7 +34,7 @@ namespace SpawnItemPlugin.Plugin
             {
                 if(random.Next(configuration.randomNumberTop) >= configuration.randomNumberRequirement) // randomization
                 {
-                    player.AddItem(configuration.item);
+                    player.ReferenceHub.inventory.ServerAddItem(configuration.item);
                     Log.Info("Player: " + player.Nickname + " has randomly spawned with " + configuration.item.ToString());
                 }
             }
